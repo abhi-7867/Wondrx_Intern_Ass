@@ -18,4 +18,10 @@ public class TransactionService {
         this.walletRepository = walletRepository;
         this.transactionRepository = transactionRepository;
     }
+
+    private void validateIdempotency(java.util.UUID transactionId) {
+        if (transactionRepository.existsById(transactionId)) {
+            throw new DuplicateTransactionException("Duplicate transaction: " + transactionId);
+        }
+    }
 }
