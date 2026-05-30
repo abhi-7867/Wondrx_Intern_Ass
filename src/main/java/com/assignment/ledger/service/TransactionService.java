@@ -80,3 +80,5 @@ public class TransactionService {
         );
     }
 }
+
+// Transaction isolation and pessimistic locking guarantees
