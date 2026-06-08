@@ -251,5 +251,3 @@ class TransactionIntegrationTest {
         System.out.println("=".repeat(80));
     }
 }
-
-}
