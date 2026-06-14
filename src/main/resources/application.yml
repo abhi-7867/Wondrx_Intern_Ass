@@ -17,7 +17,7 @@ spring:
       path: /h2-console
 
   jpa:
-    open-in-view: false
+    open-in-view: false # suppressed
     hibernate:
       ddl-auto: create-drop
     show-sql: false
